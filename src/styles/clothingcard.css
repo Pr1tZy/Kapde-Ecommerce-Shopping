@@ -1,0 +1,83 @@
+.clothing-card {
+    width: 470px; /* Adjusted width */
+    height: 700px; /* Adjusted height */
+    background-color: white;
+    text-align: left;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Butler;
+
+    justify-content: flex-start;
+}
+.clothing-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+    cursor: pointer;
+}
+.clothing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fit; /* Cover the container without stretching */
+}
+
+.clothing-image-container {
+    width: 470px;
+    height: 600px; /* Occupy 80% of the card height */
+    overflow: hidden;
+    position: relative;
+}
+.clothing-info {
+    padding: 10px;
+    height: 1; /* Remaining height for the info */
+}
+
+.clothing-name {
+    font-size: 18px;
+    color: #000; /* Black color for the name */
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.clothing-price {
+    font-size: 16px;
+    color: #555; /* Dark gray color for the price */
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+.clothing-cards-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+
+}
+
+/* Responsive styles */
+@media (max-width: 7px) {
+    .clothing-card {
+      width: 100%; /* Make the card width 90% of its container */
+      height: auto; /* Adjust height to auto */
+      margin: 10px 0; /* Add some margin for spacing */
+    }
+  
+    .clothing-image-container {
+      width: 100%; /* Make the image container width 100% of the card */
+      height: 300px; /* Adjust height to a more suitable size */
+    }
+  
+    .clothing-image {
+      width: 100%; /* Ensure the image takes the full width */
+      height: 100%; /* Adjust height to cover the container */
+    }
+  
+    .clothing-cards-container {
+      flex-direction: row; /* Keep cards in a row */
+      align-items: center; /* Center align the cards */
+      overflow-x: scroll;
+    }
+  }

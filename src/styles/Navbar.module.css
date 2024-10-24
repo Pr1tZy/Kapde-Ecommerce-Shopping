@@ -1,0 +1,143 @@
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    height: 125px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Butler;
+    color: #1e1e1e;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.logo {
+    flex-shrink: 0;
+    display: flex;
+    flex: 1;
+}
+
+.logoImg {
+    height: 124px;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.link:hover {
+    color: #ff0000;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the Shop link */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.hamburger, .searchIcon {
+    display: none;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        padding: 10px;
+        height: auto;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburger, .searchIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        order: 2;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .hamburger {
+        order: 1;
+    }
+
+    .searchIcon {
+        order: 3;
+    }
+}
+
+.searchContainer {
+    margin-left: 20px;
+}
+
+.searchInput {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}

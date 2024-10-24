@@ -1,0 +1,89 @@
+.cart-page {
+    display: flex;               /* Use flexbox for layout */
+    flex-direction: column;      /* Arrange items vertically */
+    justify-content: space-between; /* Space out items */
+    align-items: stretch;        /* Stretch items to fill space */
+    padding: 20px;
+    max-width: 100%;            /* Allow the page to take the full width */
+    height: 100vh;              /* Full viewport height */
+    background-color: #f9f9f9;  /* Optional: Set a background color */
+    overflow-y: auto;           /* Add scroll if content exceeds height */
+}
+
+.cart-items {
+    margin-top: 20px;
+    flex-grow: 1;               /* Allow this section to grow and take remaining space */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.item-name {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.item-quantity {
+    color: #555;
+}
+
+.remove-button,
+.checkout-button,
+.confirm-button,
+.cancel-button {
+    background-color: #007BFF; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-button:hover,
+.checkout-button:hover,
+.confirm-button:hover,
+.cancel-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.checkout-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.checkout-popup label {
+    display: block;
+    margin: 10px 0;
+}

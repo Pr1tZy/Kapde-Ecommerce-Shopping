@@ -1,0 +1,36 @@
+.filterContainer {
+  display: flex;
+  gap: 10px; /* Space between filter buttons */
+}
+
+.filterButtonContainer {
+  position: relative; /* Needed for dropdown positioning */
+}
+
+.filterButton {
+  background-color: transparent; /* Make button background transparent */
+  border: none; /* Remove border */
+  cursor: pointer; /* Show pointer on hover */
+  font-size: 20px; /* Adjust icon size */
+}
+
+.filterOptions {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Set width for dropdown */
+}
+
+.filterOption {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filterOption:hover {
+  background-color: rgba(245, 245, 245, 0.8); /* Highlight on hover */
+}

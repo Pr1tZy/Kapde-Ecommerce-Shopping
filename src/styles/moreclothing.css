@@ -1,0 +1,105 @@
+/* moreclothing.css */
+.shop-container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.filter-sidebar {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+}
+
+.filter-section input[type="text"] {
+    width: 40%;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.filter-section input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.filter-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-section ul li {
+    margin-bottom: 10px;
+}
+
+.filter-section ul li input {
+    margin-right: 10px;
+}
+
+.product-list {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+
+}
+
+.product-item {
+    width: 23%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .shop-container {
+        flex-direction: column;
+    }
+
+    .filter-sidebar {
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .filter-section input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-list {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+}

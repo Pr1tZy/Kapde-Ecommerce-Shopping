@@ -1,0 +1,96 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: #fff;
+    border-radius: 10px; /* More modern rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
+    padding: 30px; /* Added padding for better spacing */
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    transition: transform 0.3s; /* Subtle transition effect */
+}
+
+.login-form:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.login-form h2 {
+    font-size: 26px; /* Increased title size */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Increased space between inputs */
+}
+
+.input-group label {
+    font-weight: 600; /* Slightly bolder labels */
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+.input-group input:focus {
+    border-color: #007bff; /* More pronounced focus effect */
+    outline: none;
+}
+
+.login-button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px;
+    font-size: 18px; /* Increased button font size */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center; /* Center align error messages */
+}
+
+.success {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center; /* Center align success messages */
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-form {
+        padding: 20px; /* Adjusted padding */
+    }
+
+    .login-form h2 {
+        font-size: 22px; /* Slightly smaller title size */
+    }
+}

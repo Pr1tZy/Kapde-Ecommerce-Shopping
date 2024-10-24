@@ -1,0 +1,8 @@
+.free-shipping-bar {
+    background-color: #d19292; /* Adjust this color as needed */
+    color: #fff; /* Adjust this color as needed */
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lora', serif; /* Ensure this font is imported */
+  }
+  

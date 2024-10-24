@@ -1,0 +1,152 @@
+.shopAllContainer {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    padding: 20px; /* Optional padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    max-width: none; /* Remove max-width constraint */
+    max-height: none; /* Remove max-height constraint */
+    margin: 0; /* Reset margin */
+    background-color: #f9f9f9; /* Background color */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+}
+
+
+.leftContainer {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.rightContainer {
+    width: 75%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.clothingGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filterSection h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.filterSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filterSection li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    color: #555;
+}
+
+.filterSection button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.filterSection button:hover {
+    color: #2980b9;
+}
+
+.priceRangeContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.priceInput {
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.priceRange {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .shopAllContainer {
+        flex-direction: column;
+        padding:10px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .clothingGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .filterSection h2 {
+        font-size: 1em;
+    }
+
+    .filterSection li {
+        padding-left: 10px;
+    }
+
+    .priceInput {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    .rightContainer {
+        padding-bottom: 60px;
+    }
+
+    .filterSection {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
